@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="/css/styleForLoginAndRegistration.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+    
+
+</head>
+<body>
+<header>
+        <a href="#" class="logo">Travel</a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+            <ul class="navbar">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Package">Package</a></li>
+                <li><a href="#Destination">Destination</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="login.html" th:href="@{http://localhost:8181/login}">Login</a></li>
+            </ul>
+    </header>
+
+
+    <div class="wrapper">
+		
+	  
+        <form th:action="${registration}" method="post" th:object="${user}">
+
+            
+            <h1>Register</h1>
+            <div class="input-box">
+                <input type="text" id="firstName" th:field="*{firstName}" placeholder="Firstname" required autofocus="autofocus" />
+                <ion-icon name="person-circle-outline"></ion-icon>
+            </div>
+
+            <div class="input-box">
+                 <input type="text" id="lastName" th:field="*{lastName}" placeholder="Lastname" required autofocus="autofocus" />
+                <ion-icon name="person-circle-outline"></ion-icon>
+            </div>
+            
+            <div class="input-box">
+                <input type="password" id="password" th:field="*{password}" placeholder="password" required autofocus="autofocus" />
+                <ion-icon name="lock-closed-outline"></ion-icon>
+            </div>
+
+           
+
+            <div class="input-box">
+                 <input type="email" id="email" th:field="*{email}" placeholder="Email" required autofocus="autofocus" />
+                <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+
+            <div class="register-link">
+                <p>Already have account? <a href="/" th:href="@{/Login}">Login</a></p>
+            </div>
+            
+    </form>
+			
+			<div th:if="${param.success}">
+				<div class="success">Successfully registered</div>
+			</div>
+
+    </div>
+
+
+  
+
+
+        <script type="text/javascript" src="/js/script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+ 
+    <script type="text/javascript" src="/script.js"></script>
+    <script src="/js/script.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- css.gg -->
+  <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+  <link rel="stylesheet"  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+<!-- UNPKG -->
+<link href="https://unpkg.com/css.gg/icons/icons.css" rel="stylesheet" />
+
+<!-- JSDelivr -->
+<link
+  href="https://cdn.jsdelivr.net/npm/css.gg/icons/icons.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+	   <header>
+        <a href="#" class="logo">Travel</a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+            <ul class="navbar">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Package">Package</a></li>
+                <li><a href="#Destination">Destination</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li sec:authorize="isAuthenticated()"><a href="login.html" th:href="@{/logout}">Logout</a></li>
+            </ul>
+    </header>
+    
+     <!--Home section-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Fuel Mind <br> Travel</h1>
+            <p>Enthusiastically extend extensive customer service before <br>
+            best breed convergence completely.</p>
+            <a href="#" class="home-btn">Read more</a>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="text">
+            <h2>Start your Vacation <br> with Lots of Services</h2>
+        </div>
+
+       <div class="row-items">
+            <div class="container-box">
+                <div class="container-img">
+                    <img src="/img/ship.png">
+                </div>
+                <h4>Ship Cruises</h4>
+                <p>150 Properties</p>
+            </div>
+
+            <div class="container-box">
+                <div class="container-img">
+                    <img src="/img/mountain.png">
+                </div>
+                <h4>Mountains Tours</h4>
+                <p>150 Properties</p>
+            </div>
+
+            <div class="container-box">
+                <div class="container-img">
+                    <img src="/img/vacations.png">
+                </div>
+                <h4>Summer Rest</h4>
+                <p>150 Properties</p>
+            </div>
+
+            <div class="container-box">
+                <div class="container-img">
+                    <img src="/img/biryani.png">
+                </div>
+                <h4>Food Tours</h4>
+                <p>150 Properties</p>
+            </div>
+       </div> 
+
+
+        
+    </section>
+    
+
+    <!--Package section-->
+    <section class="package" id="package">
+        <div class="title">
+            <h2>Our Upcoming <br> Tour Package</h2>
+        </div>
+
+        <div class="package-content">
+            <div class="box">
+                <div class="thum">
+                    <img src="/img/anthony-delanoix-Q0-fOL2nqZc-unsplash.jpg">
+                    <h3>$499</h3>
+                </div>
+            
+             <div class="dest-content">
+                <div class="location">
+                    <h4>Paris</h4>
+                    <p>4h -5h</p>
+                </div>
+                <div class="stars">
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></box-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></box-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></box-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></box-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></box-icon></a>
+                </div>
+            </div>
+        </div>
+
+        
+            <div class="box">
+                <div class="thum">
+                    <img src="/img/City of London Walking Tour - FREE Self-Guided City of London Walk.jpg">
+                    <h3>$499</h3>
+                </div>
+            
+             <div class="dest-content">
+                <div class="location">
+                    <h4>London</h4>
+                    <p>4h -5h</p>
+                </div>
+                <div class="stars">
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></box-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></box-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></box-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></box-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></box-icon></a>
+                </div>
+            </div>
+        </div>
+
+        
+            <div class="box">
+                <div class="thum">
+                    <img src="/img/10 Best Areas Of New York To Visit.jpg">
+                    <h3>$499</h3>
+                </div>
+            
+             <div class="dest-content">
+                <div class="location">
+                    <h4>New York</h4>
+                    <p>4h -5h</p>
+                </div>
+                <div class="stars">
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></box-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></box-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></box-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></box-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></box-icon></a>
+                </div>
+            </div>
+        </div>
+
+      
+            
+
+        
+          
+
+    </div>
+</section>
+  
+<!--Destination section-->
+<section class="destination">
+    <div class="title">
+        <h2>Our Most Popular<br> Destination!</h2>
+    </div>
+
+    <div class="destination-content">
+        <div class="col-content">
+            <img src="/img/jarand-k-lokeland-3-MftKobVtg-unsplash.jpg">
+            <h5>Tromso</h5>
+             <p>Norway</p>
+        </div>
+
+        <div class="col-content">
+            <img src="/img/morgan-thompson-I7q8s0KNhn0-unsplash.jpg">
+            <h5>Tromso</h5>
+             <p>Norway</p>
+        </div>
+
+        <div class="col-content">
+            <img src="/img/who-s-denilo-cvchSJpMBk4-unsplash.jpg">
+            <h5>Amsterdam</h5>
+             <p>Nertherland</p>
+        </div>
+
+        <div class="col-content">
+            <img src="/img/despina-galani-dq2yziptkFU-unsplash.jpg">
+            <h5>Gent</h5>
+             <p>Belgium</p>
+        </div>
+
+        <div class="col-content">
+            <img src="/img/moises-gonzalez-4xFUoiW3i4k-unsplash.jpg">
+            <h5>Berlin</h5>
+             <p>Germany</p>
+        </div>
+
+        <div class="col-content">
+            <img src="/img/nikolay-vorobyev-jaH3QF46gAY-unsplash.jpg">
+            <h5>Moscow</h5>
+             <p>Russia</p>
+        </div>
+    </div>
+</section>
+
+<!--Newsletter-->
+<section id="contact">
+    <div class="footer">
+       <div class="main">
+        <div class="list">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Tour</a></li>
+            </ul>
+        </div>
+
+        <div class="list">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Tour</a></li>
+            </ul>
+        </div>
+
+        <div class="list">
+            <h4>Contact Infor</h4>
+            <ul>
+              <li>Thanh Xuan </li>
+              <li>Ha Noi Viet Nam</li>
+              <li>+84 372345 488</li>
+              <li>huy23071999@gmail.com</li>
+             
+            </ul>
+        </div>
+
+        <div class="list">
+            <h4>Connect</h4>
+            <div class="social">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
+            </div>
+        </div>
+       </div>
+
+       <div class="end-text">
+            <p>Copyright @2022 All right reverved</p>
+       </div>
+
+    </div>
+</section>
+         
+
+        <script type="text/javascript" src="/js/script.js"></script> 
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    </div>
+    
+</body>
+</html>
